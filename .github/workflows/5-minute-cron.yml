@@ -1,0 +1,13 @@
+name: 5-minute-cron
+
+on:
+    schedule:
+        - cron '*/5 * * * *'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Fail
+            run: false
+            
