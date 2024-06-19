@@ -7,6 +7,11 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        
         steps:
-            - name: Fail
-            run: pwd && false
+            - name: Git checkout
+            uses: actions/checkout@v2
+            with: { ref: debug }
+            - name: List files
+            run: ls
+
