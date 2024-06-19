@@ -11,5 +11,5 @@ jobs:
         
         steps:
         - name: Every time
-          run: echo "We ran cron"
+          run: echo "We ran cron" && false
 
