@@ -5,13 +5,14 @@ on:
         - cron '*/15 * * * *'
 
 jobs:
-    build:
+    job1:
+        name: Debug
         runs-on: ubuntu-latest
         
         steps:
-            - name: Git checkout
-            uses: actions/checkout@v2
-            with: { ref: debug }
-            - name: List files
-            run: ls
+        - name: Git checkout
+          uses: actions/checkout@v2
+          with: { ref: debug }
+        - name: List files
+          run: ls
 
